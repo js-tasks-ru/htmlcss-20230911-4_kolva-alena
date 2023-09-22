@@ -1,20 +1,25 @@
 /* Стилизация аккордеона */
 .accordion {
-  display: block;
   margin-bottom: 8px;
   padding: 24px 32px;
-  width: 579px;
-  flex-shrink: 0;
   background-color: var(--white);
   border: 1px solid var(--grey-3);
   color: var(--black);
   border-radius: 8px;
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  cursor: pointer;
 }
-.accordion:last-child {
-  margin-bottom: 0;
+.accordion__summary,
+.accordion__summary-text {
+  font-family: inter;
+}
+
+.accordion__summary-text {
+  color: var(--grey-4);
+}
+.accordion__summary::-webkit-details-marker {
+  display: none;
 }
