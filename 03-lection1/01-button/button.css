@@ -1,10 +1,7 @@
 /* Стилизация кнопки */
 .button {
-  padding: 15px 0 14px;
-  margin: 30px 15px;
-  width: 182px;
+  padding: 15px;
   height: 48px;
-  flex-shrink: 0;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -18,12 +15,11 @@
 }
 
 .button:disabled {
-  cursor: not-allowed;
+  pointer-events: none;
   opacity: 0.5;
 }
 
 .button--primary {
-  padding: 0 62px 0 63px;
   background: var(--Blue, #4263eb);
   border-color: var(--Blue);
 }
