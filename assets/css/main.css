@@ -4,7 +4,9 @@
 @import '../../components/content/content.css';
 @import '../../components/footer/footer.css';
 @import '../../components/page/page.css';
-
+@import '../../components/container/container.css';
+@import '../../components/card/card.css';
+@import '../../components/preview/preview.css';
 :root {
   --white: #ffffff;
   --black: #212429;
@@ -26,4 +28,9 @@
 
 * {
   font-family: 'Roboto', sans-serif;
+}
+html,
+body {
+  min-height: 100%;
+  height: 100%;
 }
