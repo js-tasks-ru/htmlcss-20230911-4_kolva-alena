@@ -1,0 +1,7 @@
+.card {
+  width: 350px;
+  height: 367px;
+  border-radius: 12px;
+  background-color: var(--purple);
+  flex-wrap: wrap;
+}

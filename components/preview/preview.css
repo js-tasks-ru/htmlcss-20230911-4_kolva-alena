@@ -1,0 +1,9 @@
+.preview {
+  background: var(--grey-1);
+  padding: 67px 0 92px;
+}
+.preview__inner {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
