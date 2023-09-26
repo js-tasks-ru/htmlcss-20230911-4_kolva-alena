@@ -14,11 +14,25 @@
 
 .skeleton__bottom-block {
   margin-top: 24px;
+  display: flex;
+  flex-direction: column;
 }
 .skeleton__content-container {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+}
+
+.skeleton__line {
+  height: 20px;
+  background: linear-gradient(
+    93deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
 }
 
 .skeleton__elipse {
@@ -29,55 +43,18 @@
   margin-right: 16px;
 }
 
-.skeleton__first-line {
+.skeleton__line_short {
   width: 40%;
-  height: 20px;
   margin-bottom: 8px;
-  background: linear-gradient(
-    93deg,
-    #dde2e5 6.44%,
-    #e2e6e8 38.47%,
-    #f3f5f5 56.48%,
-    #e3e7ea 77.5%,
-    #dde2e5 102.52%
-  );
 }
 
-.skeleton__second-line {
+.skeleton__line_medium {
   width: 50%;
-  height: 20px;
-  background: linear-gradient(
-    93deg,
-    #dde2e5 6.44%,
-    #e2e6e8 38.47%,
-    #f3f5f5 56.48%,
-    #e3e7ea 77.5%,
-    #dde2e5 102.52%
-  );
 }
-
-.skeleton__bottom-line {
+.skeleton__line_long {
+  width: 75%;
+}
+.skeleton__line_extralong {
   width: 95%;
-  height: 20px;
   margin-bottom: 8px;
-  background: linear-gradient(
-    93deg,
-    #dde2e5 6.44%,
-    #e2e6e8 38.47%,
-    #f3f5f5 56.48%,
-    #e3e7ea 77.5%,
-    #dde2e5 102.52%
-  );
-}
-.skeletom__bottom-downline {
-  width: 90%;
-  height: 20px;
-  background: linear-gradient(
-    93deg,
-    #dde2e5 6.44%,
-    #e2e6e8 38.47%,
-    #f3f5f5 56.48%,
-    #e3e7ea 77.5%,
-    #dde2e5 102.52%
-  );
 }
