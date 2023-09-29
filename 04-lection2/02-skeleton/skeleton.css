@@ -16,11 +16,13 @@
   margin-top: 24px;
   display: flex;
   flex-direction: column;
+  row-gap: 8px;
 }
 .skeleton__content-container {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  row-gap: 8px;
 }
 
 .skeleton__line {
@@ -45,7 +47,6 @@
 
 .skeleton__line_short {
   width: 40%;
-  margin-bottom: 8px;
 }
 
 .skeleton__line_medium {
@@ -56,5 +57,4 @@
 }
 .skeleton__line_extralong {
   width: 95%;
-  margin-bottom: 8px;
 }
