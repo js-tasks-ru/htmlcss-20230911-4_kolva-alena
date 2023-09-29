@@ -1,6 +1,6 @@
 .modal {
   display: none;
-  min-width: 428px;
+  min-width: 284px;
   border-radius: 8px;
   background: var(--white);
   padding: 32px 40px 40px 40px;
@@ -15,7 +15,7 @@
   cursor: pointer;
   position: absolute;
   left: 95%;
-  transform: translate(-10%, -100%);
+  transform: translate(-30%, -100%);
 }
 
 .modal__field {
