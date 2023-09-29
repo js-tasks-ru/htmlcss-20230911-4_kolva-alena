@@ -21,16 +21,13 @@
   line-height: 24px; /* 150% */
 }
 
-.footer__title_inner {
+.footer_inner {
   color: var(--grey-3);
+  background-color: var(--grey-1);
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
-  font-weight: 500;
   line-height: 18px; /* 150% */
   letter-spacing: 0.48px;
   text-transform: uppercase;
-}
-.footer_inner {
-  background-color: var(--grey-1);
 }
