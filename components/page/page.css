@@ -6,3 +6,6 @@
 .page__main {
   flex-grow: 1;
 }
+.page_inner {
+  background-color: var(--grey-1);
+}
