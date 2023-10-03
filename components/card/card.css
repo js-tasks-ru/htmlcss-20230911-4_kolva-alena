@@ -4,3 +4,10 @@
   border-radius: 12px;
   background-color: var(--purple);
 }
+
+@media (max-width: 480px) {
+  .card {
+    width: 164px;
+    height: 231px;
+  }
+}
