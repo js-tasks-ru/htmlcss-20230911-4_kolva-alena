@@ -44,6 +44,3 @@
 .button_alternate:hover:not(:disabled) {
   border: 1px solid var(--grey-4);
 }
-.button_modal {
-  margin-top: 8px;
-}

@@ -8,47 +8,41 @@
     <title>Modal</title>
   </head>
   <body>
-    <button class="button button_primary" id="modal-open">Open</button>
-    <div class="modal-background" id="modal-background"></div>
-    <div class="modal" id="modal">
-      <div class="modal__close" id="modal-close">
-        <div class="modal__icon">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z"
-              fill="#212429"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
-              fill="#212429"
-            />
-          </svg>
+    <div class="modal">
+      <button class="button button_primary" id="modal-open">Open</button>
+      <div class="modal__window" id="modal">
+        <div class="modal__close" id="modal-close">
+          <div class="modal__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z"
+                fill="#212429"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                fill="#212429"
+              />
+            </svg>
+          </div>
         </div>
+        <div class="modal__field">
+          <label class="modal__text">name</label>
+        </div>
+        <div class="modal__field">
+          <label class="modal__text">email</label>
+        </div>
+        <button class="button button_primary">Submit</button>
       </div>
-      <div class="modal__field">
-        <label for="name" class="modal__text">name</label>
-        <input class="modal__input" type="text" id="name" placeholder="Olena" />
-      </div>
-      <div class="modal__field">
-        <label for="email" class="modal__text">email</label>
-        <input
-          class="modal__input"
-          type="text"
-          id="email"
-          placeholder="kkkk@gmail.com"
-        />
-      </div>
-      <button class="button button_primary button_modal">Submit</button>
     </div>
   </body>
   <script src="./index.js"></script>
