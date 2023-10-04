@@ -31,5 +31,18 @@
 }
 
 .accordion__section[open] {
+  position: relative;
   padding: 24px 32px 8px 32px;
+}
+
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 32px;
+}
+.accordion__section[open] {
+  .arrow-icon {
+    transform: rotate(180deg);
+  }
 }
