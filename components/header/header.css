@@ -9,6 +9,9 @@
   font-weight: 500;
   line-height: 64px;
 }
+.header_inner {
+  background-color: var(--gey-1);
+}
 
 @media (max-width: 480px) {
   .header__title {
