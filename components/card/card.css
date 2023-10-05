@@ -3,5 +3,11 @@
   height: 367px;
   border-radius: 12px;
   background-color: var(--purple);
-  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 164px;
+    height: 231px;
+  }
 }

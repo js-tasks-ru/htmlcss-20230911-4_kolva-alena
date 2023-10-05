@@ -7,3 +7,9 @@
   gap: 30px;
   flex-wrap: wrap;
 }
+
+@media (max-width: 480px) {
+  .preview__inner {
+    gap: 16px;
+  }
+}
