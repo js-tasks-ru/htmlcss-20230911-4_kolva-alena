@@ -42,6 +42,6 @@
   right: 32px;
   top: 24px;
 }
-.accordion__section[open] .accordion__summary .accordion__arrow {
+.accordion__section[open] .accordion__arrow {
   transform: rotate(180deg);
 }
