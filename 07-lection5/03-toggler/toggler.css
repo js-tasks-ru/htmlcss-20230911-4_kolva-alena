@@ -1,12 +1,6 @@
-.toggler-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
 .toggler {
   display: inline-flex;
-  gap: 12px;
+  position: relative;
 }
 .toggler__basic {
   position: absolute;
@@ -18,7 +12,6 @@
   display: flex;
   gap: 12px;
   align-items: center;
-  
 }
 
 .toggler__control {
@@ -46,13 +39,6 @@
   line-height: 24px;
   position: relative;
 }
-.toggler__title_switch{
-    visibility: hidden;
-    position: absolute;
-    top: 0; 
-    left: 0; 
-    
-}
 
 .toggler__basic:checked ~ .toggler__state .toggler__control {
   background-color: var(--blue);
@@ -62,20 +48,15 @@
 }
 .toggler__basic:checked ~ .toggler__state .toggler__inner-circle {
   background-color: var(--white);
-  text
 }
+
 .toggler__basic:checked ~ .toggler__state .toggler__title {
-    text-decoration: underline;
-    visibility: hidden;
-  }
-  
-  .toggler__basic:checked ~ span,.toggler__title_switch{
-    visibility: visible;
-  }
-  .toggler__basic:checked ~ .toggler__state .toggler__inner-circle {
-    background-color: var(--white);
-    text
-  }
+  text-decoration: underline;
+}
+
+.toggler__basic:checked ~ .toggler__state .toggler__inner-circle {
+  background-color: var(--white);
+}
 .toggler__basic:focus ~ .toggler__state .toggler__title {
   text-decoration: underline;
 }
@@ -83,9 +64,9 @@
 .toggler__basic:disabled ~ .toggler__state .toggler__control {
   background-color: var(--grey-2);
   border-color: var(--grey-2);
+  pointer-events: none;
 }
 
 .toggler__basic:disabled ~ .toggler__state .toggler__inner-circle {
   background-color: var(--grey-3);
 }
-
