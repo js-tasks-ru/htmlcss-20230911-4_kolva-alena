@@ -1,12 +1,6 @@
-.checkbox-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .checkbox {
+  position: relative;
   display: inline-flex;
-  gap: 12px;
 }
 .checkbox__basic {
   position: absolute;
@@ -51,6 +45,7 @@
 .checkbox__basic:disabled ~ .checkbox__state .checkbox__control {
   background-color: var(--grey-2);
   border-color: var(--grey-2);
+  pointer-events: none;
 }
 
 .checkbox__basic:disabled ~ .checkbox__state .checkbox__title {
