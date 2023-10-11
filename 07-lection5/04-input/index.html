@@ -6,17 +6,24 @@
     <link rel="stylesheet" href="./input.css" />
   </head>
   <body>
-    <form class="form">
-      <div class="form__content">
-        <label class="form__label">Label</label>
-        <input type="text" class="form__input" placeholder="label" />
-        <svg class="form__icon_success">
-          <use href="../../assets/images/icons-sprite.svg#success"></use>
-        </svg>
-        <svg class="form__icon_error">
-          <use href="../../assets/images/icons-sprite.svg#error"></use>
-        </svg>
+    <div class="input">
+      <div class="input__content">
+        <label for="label-field" class="input__label">Label</label>
+        <div class="input__inner">
+          <input
+            id="label-field"
+            type="text"
+            class="input__input input_error"
+            placeholder="label"
+          />
+          <svg class="input__icon input__icon_success">
+            <use href="../../assets/images/icons-sprite.svg#success"></use>
+          </svg>
+          <svg class="input__icon input__icon_error">
+            <use href="../../assets/images/icons-sprite.svg#error"></use>
+          </svg>
+        </div>
       </div>
-    </form>
+    </div>
   </body>
 </html>

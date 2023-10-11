@@ -1,16 +1,15 @@
-.form {
+.input {
   display: flex;
   flex-direction: column;
   gap: 39px;
 }
-.form__content {
+.input__content {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  position: relative;
 }
 
-.form__label {
+.input__label {
   color: var(--grey-3);
   font-family: Inter;
   font-size: 12px;
@@ -20,8 +19,13 @@
   letter-spacing: 0.48px;
   text-transform: uppercase;
 }
-.form__input {
+.input__inner {
+  position: relative;
+}
+.input__input {
   all: unset;
+  padding: 17px 24px 13px 24px;
+  width: calc(100% - 50px);
   background-color: var(--white);
   border: 1px solid var(--grey-2);
   border-radius: 6px;
@@ -33,34 +37,25 @@
   line-height: 26px;
   height: 56px;
 }
-.form__input::placeholder {
+.input__input::placeholder {
   color: var(--grey-2);
-  padding-left: 24px;
 }
-.form__input:focus {
+.input__input:focus {
   border: 1px solid var(--blue);
 }
-.form__input_error {
+.input_error .input__input {
   border: 1px solid var(--error);
 }
-.form__icon_error {
+.input__icon {
   display: inline-flex;
   width: 24px;
   height: 24px;
   position: absolute;
   right: 16px;
-  bottom: 16px;
+  top: 35px;
   visibility: hidden;
 }
-.form__icon_success {
-  display: inline-flex;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
-  visibility: hidden;
-}
-.form__input:disabled {
+
+.input__input:disabled {
   background-color: var(--grey-2);
 }
