@@ -1,12 +1,6 @@
-.radio-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
-}
-
 .radiobutton {
   display: inline-flex;
-  gap: 12px;
+  position: relative;
 }
 .radiobutton__basic {
   position: absolute;
@@ -60,6 +54,7 @@
 .radiobutton__basic:disabled ~ .radiobutton__state .radiobutton__control {
   background-color: var(--grey-2);
   border-color: var(--grey-2);
+  pointer-events: none;
 }
 
 .radiobutton__basic:disabled ~ .radiobutton__state .radiobutton__title {
