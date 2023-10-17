@@ -7,6 +7,11 @@
 @import '../../components/container/container.css';
 @import '../../components/card/card.css';
 @import '../../components/preview/preview.css';
+@import '../../components/logo/logo.css';
+@import '../../components/navigation/navigation.css';
+@import '../../components/toggler/toggler-theme.css';
+@import '../../components/tabs/tabs.css';
+
 :root {
   --white: #ffffff;
   --black: #212429;
