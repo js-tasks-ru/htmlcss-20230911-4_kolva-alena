@@ -1,6 +1,8 @@
 .tooltip {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .tooltip__trigger {
   cursor: pointer;
@@ -35,4 +37,11 @@
 }
 .tooltip__trigger:hover ~ .tooltip__bubble {
   display: block;
+}
+.tooltip__bubble_card {
+  display: block;
+  background-color: var(--blue);
+}
+.tooltip__bubble_card::before {
+  border-top-color: var(--blue);
 }
