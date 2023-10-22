@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <!-- Страница с модалкой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./modal.css">
-        <title>Modal</title>
-    </head>
-    <body>
-    </body>
-    <script src="./index.js"></script> 
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./modal.css" />
+    <link rel="stylesheet" href="../../03-lection1/01-button/button.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <button class="button button_primary" id="modal-open">Open</button>
+    <div class="modal">
+      <div class="modal__window" id="modal">
+        <div class="modal__close" id="modal-close">
+          <div class="modal__icon-close">
+            <svg>
+              <use href="../../assets/images/svg-sptites.svg#cross-sign"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="modal__text">name</p>
+        <p class="modal__text">email</p>
+
+        <button class="button button_primary">Submit</button>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
 </html>
