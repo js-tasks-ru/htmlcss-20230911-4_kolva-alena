@@ -38,10 +38,10 @@
 .tooltip__trigger:hover ~ .tooltip__bubble {
   display: block;
 }
-.tooltip__bubble_card {
+.tooltip_card .tooltip__bubble {
   display: block;
   background-color: var(--blue);
 }
-.tooltip__bubble_card::before {
+.tooltip_card .tooltip__bubble::before {
   border-top-color: var(--blue);
 }
