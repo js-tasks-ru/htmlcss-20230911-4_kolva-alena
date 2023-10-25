@@ -1,11 +1,6 @@
 .input {
   display: flex;
   flex-direction: column;
-  gap: 39px;
-}
-.input__content {
-  display: flex;
-  flex-direction: column;
   gap: 5px;
 }
 
