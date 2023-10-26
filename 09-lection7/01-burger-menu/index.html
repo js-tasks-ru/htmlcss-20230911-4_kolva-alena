@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./burger-menu.css" />
+    <script defer src="./burger-menu.js"></script>
+  </head>
+  <body>
+    <div id="burger-menu-open" class="burger-logo">
+      <div class="burger-logo__element"></div>
+      <div class="burger-logo__element"></div>
+      <div class="burger-logo__element"></div>
+    </div>
 
-    </body>
+    <div class="burger-menu" id="burger-menu">
+      <div class="burger-menu__header">
+        <div class="burger-menu__close" id="burger-menu-close">
+          <svg class="burger-menu__cross-sign">
+            <use href="../../assets/images/icons-sprite.svg#cross-sign"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="burger-menu__mode">
+        <p class="burger-menu__title-mode">Dark mode</p>
+        <div class="toggler"></div>
+      </div>
+      <div class="burger-menu__category">
+        <p class="burger-menu__title-block">Elements</p>
+        <a href="" class="burger-menu__title">Avatar</a>
+        <a href="" class="burger-menu__title">Custom form elements</a>
+        <a href="" class="burger-menu__title">Button</a>
+      </div>
+      <div class="burger-menu__category">
+        <p class="burger-menu__title-block">Containers</p>
+        <a href="" class="burger-menu__title burger-menu__titile_active"
+          >Histogram</a
+        >
+        <a href="" class="burger-menu__title">Calendar</a>
+        <a href="" class="burger-menu__title">Modal</a>
+      </div>
+    </div>
+  </body>
 </html>
