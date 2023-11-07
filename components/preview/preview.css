@@ -3,9 +3,10 @@
   padding: 67px 0 92px;
 }
 .preview__inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 30px;
-  flex-wrap: wrap;
 }
 
 @media (max-width: 480px) {

@@ -13,6 +13,7 @@
   font-weight: 500;
   line-height: normal;
   position: relative;
+  transition: background-color 0.5s;
 }
 
 .button:disabled {
@@ -44,4 +45,7 @@
 
 .button_alternate:hover:not(:disabled) {
   border: 1px solid var(--grey-4);
+}
+.button_modal {
+  margin-top: 19px;
 }

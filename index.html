@@ -3,6 +3,13 @@
 <html lang="ru">
   <head>
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="07-lection5/03-toggler/toggler.css" />
+    <link rel="stylesheet" href="06-lection4/01-avatar/avatar.css" />
+    <link rel="stylesheet" href="05-lection3/02-modal/modal.css" />
+    <link rel="stylesheet" href="07-lection5/01-checkbox/checkbox.css" />
+    <link rel="stylesheet" href="07-lection5/02-radio/radio.css" />
+    <link rel="stylesheet" href="03-lection1/01-button/button.css" />
+    <link rel="stylesheet" href="07-lection5/04-input/input.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -27,13 +34,28 @@
                 <div class="toggler-theme__sun">
                   <svg class="toggler-theme__icon">
                     <!-- тут смогу добавить параметры размера на уровне toggler после merge компонента с этой веткой -->
-                    <use href="assets/images/icons-sprite.svg#star"></use>
+                    <use
+                      class="toggler-theme__icon"
+                      href="assets/images/icons-sprite.svg#sun"
+                    ></use>
                   </svg>
                 </div>
-                <div class="toggler-theme__toggler"></div>
+                <div class="toggler-theme__toggler">
+                  <label class="toggler">
+                    <input class="toggler__basic" type="checkbox" />
+                    <div class="toggler__state">
+                      <div class="toggler__control">
+                        <div class="toggler__inner-circle"></div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
                 <div class="toggler-theme__moon">
                   <svg class="toggler-theme__icon">
-                    <use href="assets/images/icons-sprite.svg#moon"></use>
+                    <use
+                      class="toggler-theme__icon"
+                      href="assets/images/icons-sprite.svg#moon"
+                    ></use>
                   </svg>
                 </div>
               </div>
@@ -141,7 +163,146 @@
               </div>
             </div>
             <div class="card">
-              <div class="card__main"></div>
+              <div class="card__main">
+                <div class="card__inner">
+                  <div class="card__inner-element">
+                    <label class="checkbox">
+                      <input
+                        class="checkbox__basic"
+                        type="checkbox"
+                        name="checkbox"
+                        id="checkbox-default"
+                      />
+
+                      <div class="checkbox__state">
+                        <div class="checkbox__control">
+                          <svg
+                            width="15"
+                            height="13"
+                            viewBox="0 0 15 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1.5 7.5L5 11L13 2"
+                              stroke="white"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="checkbox__title">Default</div>
+                      </div>
+                    </label>
+                    <label class="checkbox">
+                      <input
+                        class="checkbox__basic"
+                        type="checkbox"
+                        name="checkbox"
+                        id="checkbox-default"
+                        checked
+                      />
+
+                      <div class="checkbox__state">
+                        <div class="checkbox__control">
+                          <svg
+                            width="15"
+                            height="13"
+                            viewBox="0 0 15 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1.5 7.5L5 11L13 2"
+                              stroke="white"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="checkbox__title">Checked</div>
+                      </div>
+                    </label>
+                    <label class="checkbox">
+                      <input
+                        class="checkbox__basic"
+                        type="checkbox"
+                        name="checkbox"
+                        id="checkbox-default"
+                        disabled
+                      />
+
+                      <div class="checkbox__state">
+                        <div class="checkbox__control">
+                          <svg
+                            class="checkbox__icon"
+                            width="15"
+                            height="13"
+                            viewBox="0 0 15 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1.5 7.5L5 11L13 2"
+                              stroke="white"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="checkbox__title">Disabled</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="card__inner-element">
+                    <label class="radiobutton">
+                      <input
+                        class="radiobutton__basic"
+                        type="radio"
+                        name="list"
+                        checked
+                      />
+                      <div class="radiobutton__state">
+                        <div class="radiobutton__control">
+                          <div class="radiobutton__inner-circle"></div>
+                        </div>
+                        <div class="radiobutton__title">Selected</div>
+                      </div>
+                    </label>
+                    <label class="radiobutton">
+                      <input
+                        class="radiobutton__basic"
+                        type="radio"
+                        name="list"
+                      />
+                      <div class="radiobutton__state">
+                        <div class="radiobutton__control">
+                          <div class="radiobutton__inner-circle"></div>
+                        </div>
+                        <div class="radiobutton__title">Default</div>
+                      </div>
+                    </label>
+                    <label class="radiobutton">
+                      <input
+                        class="radiobutton__basic"
+                        type="radiobutton"
+                        name="list"
+                        disabled
+                      />
+
+                      <div class="radiobutton__state">
+                        <div class="radiobutton__control">
+                          <div class="radiobutton__inner-circle"></div>
+                        </div>
+                        <div class="radiobutton__title">Disabled</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
               <div class="card__footer">
                 <h4 class="card__title">Custom form elements</h4>
                 <p class="card__category">Element</p>
@@ -219,7 +380,46 @@
               </div>
             </div>
             <div class="card">
-              <div class="card__main"></div>
+              <div class="card__main">
+                <div class="modal__window modal_card-preview" id="modal">
+                  <div class="modal__close" id="modal-close">
+                    <div class="modal__icon-close">
+                      <svg>
+                        <use
+                          class="modal__icon-close"
+                          href="assets/images/icons-sprite.svg#cross-sign"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="input">
+                    <label for="label-field" class="input__label">Name</label>
+                    <div class="input__inner">
+                      <input
+                        id="label-field"
+                        type="text"
+                        class="input__input"
+                        placeholder="Olena"
+                      />
+                    </div>
+                  </div>
+                  <div class="input">
+                    <label for="label-field" class="input__label">Email</label>
+                    <div class="input__inner">
+                      <input
+                        id="label-field"
+                        type="text"
+                        class="input__input"
+                        placeholder="olena@gmail.com"
+                      />
+                    </div>
+                  </div>
+
+                  <button class="button button_primary button_modal">
+                    Submit
+                  </button>
+                </div>
+              </div>
               <div class="card__footer">
                 <h4 class="card__title">Modal dialog</h4>
                 <p class="card__category">Container</p>
@@ -337,7 +537,15 @@
               </div>
             </div>
             <div class="card">
-              <div class="card__main"></div>
+              <div class="card__main">
+                <div class="avatar">
+                  <img
+                    class="avatar__img"
+                    src="../../assets/images/photo_2022-02-15_19-18-57.jpg"
+                    alt="employee avatar"
+                  />
+                </div>
+              </div>
               <div class="card__footer">
                 <h4 class="card__title">Avatar</h4>
                 <p class="card__category">Element</p>

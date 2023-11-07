@@ -15,7 +15,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  min-width: 284px;
+  min-width: 200px;
   border-radius: 8px;
   background: var(--white);
   padding: 32px 38px 40px 40px;
@@ -48,4 +48,17 @@
 .modal__icon-close {
   width: 24px;
   height: 24px;
+}
+.modal_card-view {
+  display: block;
+}
+
+.modal_card-preview {
+  display: block;
+  position: relative;
+  transform: none;
+  padding: 16px;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--grey-3);
 }

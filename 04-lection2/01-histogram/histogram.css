@@ -1,7 +1,7 @@
 .histogram {
   display: flex;
   flex-direction: column;
-
+  min-width: 230px;
   padding: 16px 24px 24px;
   background-color: var(--white);
   border: 1px solid var(--grey-4);
