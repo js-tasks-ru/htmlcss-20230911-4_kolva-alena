@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../components/page/page.css" />
+    <link rel="stylesheet" href="../components/header/header.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="../components/container/container.css" />
+    <link rel="stylesheet" href="../components/description/description.css" />
+    <link rel="stylesheet" href="../components/sidebar/sidebar.css" />
+    <link rel="stylesheet" href="../components/logo/logo.css" />
+    <link rel="stylesheet" href="../components/navigation/navigation.css" />
+    <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css" />
+    <link rel="stylesheet" href="../components/tabs/tabs.css" />
+    <link rel="stylesheet" href="../05-lection3/02-modal/modal.css" />
+    <link rel="stylesheet" href="../03-lection1/01-button/button.css" />
+    <link rel="stylesheet" href="../07-lection5/04-input/input.css" />
+    <title>Modal</title>
+  </head>
+  <body class="page_inner">
+    <div class="inner page page_inner">
+      <header class="header header_inner">
+        <div class="container">
+          <div class="header__main">
+            <div class="logo">
+              <a class="logo__link" href="../index.html">
+                <div class="logo__logo logo__square"></div>
+                <div class="logo__logo logo__sphere"></div>
+                <div class="logo__logo logo__triangle"></div>
+              </a>
+            </div>
+            <div class="navigation">
+              <div class="navigation__inner">
+                <a href="" class="navigation__link navigation__link_active"
+                  >Components</a
+                >
+                <a href="" class="navigation__link">About</a>
+                <a href="" class="navigation__link">Contact</a>
+              </div>
+              <div class="toggler-theme">
+                <div class="toggler-theme__sun">
+                  <svg class="toggler-theme__icon">
+                    <!-- тут смогу добавить параметры размера на уровне toggler после merge компонента с этой веткой -->
+                    <use
+                      class="toggler-theme__icon"
+                      href="../assets/images/icons-sprite.svg#sun"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="toggler-theme__toggler">
+                  <label class="toggler">
+                    <input class="toggler__basic" type="checkbox" />
+                    <div class="toggler__state">
+                      <div class="toggler__control">
+                        <div class="toggler__inner-circle"></div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="toggler-theme__moon">
+                  <svg class="toggler-theme__icon">
+                    <use
+                      class="toggler-theme__icon"
+                      href="../assets/images/icons-sprite.svg#moon"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page__main inner__main">
+        <div class="container container_inner">
+          <div class="sidebar">
+            <div class="sidebar__group">
+              <h4 class="sidebar__group-label">Elements</h4>
+              <a class="sidebar__link" href="avatar.html">Avatar</a>
+              <a class="sidebar__link" href="histogram.html">Histogram</a>
+              <a class="sidebar__link" href="custom-form-elements.html"
+                >Custom form elements</a
+              >
+            </div>
+            <div class="sidebar__group">
+              <h4 class="sidebar__group-label">Containers</h4>
+              <a class="sidebar__link sidebar_active" href="modal.html"
+                >Modal</a
+              >
+              <a class="sidebar__link" href="tooltip.html">Tooltip</a>
+              <a class="sidebar__link" href="calendar.html">Calendar</a>
+              <a class="sidebar__link" href="accordion.html">Accordion</a>
+            </div>
+          </div>
+          <div class="description">
+            <div class="description__visual">
+              <h3 class="description__label">Modal</h3>
+              <div class="description__main">
+                <div class="modal__window modal_card-preview" id="modal">
+                  <div class="modal__close" id="modal-close">
+                    <div class="modal__icon-close">
+                      <svg>
+                        <use
+                          href="../../assets/images/svg-sptites.svg#cross-sign"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="input">
+                    <label for="label-field" class="input__label">Name</label>
+                    <div class="input__inner">
+                      <input
+                        id="label-field"
+                        type="text"
+                        class="input__input"
+                        placeholder="Olena"
+                      />
+                    </div>
+                  </div>
+                  <div class="input">
+                    <label for="label-field" class="input__label">Email</label>
+                    <div class="input__inner">
+                      <input
+                        id="label-field"
+                        type="text"
+                        class="input__input"
+                        placeholder="olena@gmail.com"
+                      />
+                    </div>
+                  </div>
+
+                  <button class="button button_primary button_modal">
+                    Submit
+                  </button>
+                </div>
+              </div>
+              <div class="description__tabs tabs">
+                <div class="tabs__scroller">
+                  <label class="tabs__state">
+                    <input
+                      name="tabs"
+                      class="tabs__control"
+                      type="radio"
+                      id="#all-tab"
+                      checked
+                    />
+                    <div class="tabs__label tabs__label_active">HTML</div>
+                    <div
+                      class="tabs__scroller-control tabs__scroller-control_active"
+                    ></div>
+                  </label>
+                  <label class="tabs__state">
+                    <input
+                      name="tabs"
+                      class="tabs__control"
+                      type="radio"
+                      id="#complex-tab"
+                    />
+                    <div class="tabs__label">CSS</div>
+                    <div class="tabs__scroller-control"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="description__code">
+              <div class="description__html">
+                <pre><code>&lt;div class="modal__window modal_card-preview" id="modal"&gt;
+                  &lt;div class="modal__close" id="modal-close"&gt;
+                    &lt;div class="modal__icon-close"&gt;
+                      &lt;svg&gt;
+                        &lt;use
+                          href="../../assets/images/svg-sptites.svg#cross-sign"
+                        &gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="input"&gt;
+                    &lt;label for="label-field" class="input__label"&gt;Name&lt;/label&gt;
+                    &lt;div class="input__inner"&gt;
+                      &lt;input
+                        id="label-field"
+                        type="text"
+                        class="input__input"
+                        placeholder="Olena"
+                      /&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="input"&gt;
+                    &lt;label for="label-field" class="input__label"&gt;Email&lt;/label&gt;
+                    &lt;div class="input__inner"&gt;
+                      &lt;input
+                        id="label-field"
+                        type="text"
+                        class="input__input"
+                        placeholder="olena@gmail.com"
+                      /&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;button class="button button_primary button_modal"&gt;
+                    Submit
+                  &lt;/button&gt;
+                &lt;/div&gt;</code></pre>
+              </div>
+              <div class="description__css">
+                .modal { width: 100%; height: 100%; background: rgba(196, 196,
+                196, 0.5); position: fixed; left: 0; top: 0; right: 0; bottom:
+                0; } .modal__window { position: absolute; left: 50%; top: 50%;
+                transform: translate(-50%, -50%); display: none; min-width:
+                200px; border-radius: 8px; background: var(--white); padding:
+                32px 38px 40px 40px; } .modal__close { display: inline-block;
+                cursor: pointer; position: absolute; right: 5px; top: 5px; }
+                .modal__field { display: flex; flex-direction: column;
+                margin-bottom: 16px; } .modal__text { margin-bottom: 5px;
+                text-transform: uppercase; color: var(--Gray-3, #acb5bd);
+                font-family: Inter; font-size: 12px; font-style: normal;
+                font-weight: 500; line-height: 18px; /* 150% */ letter-spacing:
+                0.48px; } .modal__icon-close { width: 24px; height: 24px; }
+                .modal_card-view { display: block; } .modal_card-preview {
+                display: block; position: relative; transform: none; padding:
+                16px; top: 0; left: 0; border: 1px solid var(--grey-3); }
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer footer_inner">
+        <h5 class="footer__title footer_inner">reusable component library</h5>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -14,17 +14,20 @@
     <link rel="stylesheet" href="../components/navigation/navigation.css" />
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css" />
     <link rel="stylesheet" href="../components/tabs/tabs.css" />
-    <title>Inner Page</title>
+    <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css" />
+    <title>Avatar</title>
   </head>
-  <body>
+  <body class="page_inner">
     <div class="inner page page_inner">
       <header class="header header_inner">
         <div class="container">
           <div class="header__main">
             <div class="logo">
-              <div class="logo__logo logo__square"></div>
-              <div class="logo__logo logo__sphere"></div>
-              <div class="logo__logo logo__triangle"></div>
+              <a class="logo__link" href="../index.html">
+                <div class="logo__logo logo__square"></div>
+                <div class="logo__logo logo__sphere"></div>
+                <div class="logo__logo logo__triangle"></div>
+              </a>
             </div>
             <div class="navigation">
               <div class="navigation__inner">
@@ -37,7 +40,6 @@
               <div class="toggler-theme">
                 <div class="toggler-theme__sun">
                   <svg class="toggler-theme__icon">
-                    <!-- тут смогу добавить параметры размера на уровне toggler после merge компонента с этой веткой -->
                     <use
                       class="toggler-theme__icon"
                       href="../assets/images/icons-sprite.svg#sun"
@@ -72,22 +74,34 @@
           <div class="sidebar">
             <div class="sidebar__group">
               <h4 class="sidebar__group-label">Elements</h4>
-              <a class="sidebar__link" href="#">Avatar</a>
-              <a class="sidebar__link" href="#">Histogram</a>
-              <a class="sidebar__link" href="#">Custom form elements</a>
+              <a class="sidebar__link sidebar_active" href="avatar.html"
+                >Avatar</a
+              >
+              <a class="sidebar__link" href="histogram.html">Histogram</a>
+              <a class="sidebar__link" href="custom-form-elements.html"
+                >Custom form elements</a
+              >
             </div>
             <div class="sidebar__group">
               <h4 class="sidebar__group-label">Containers</h4>
-              <a class="sidebar__link" href="#">Modal</a>
-              <a class="sidebar__link" href="#">Tooltip</a>
-              <a class="sidebar__link" href="#">Calendar</a>
-              <a class="sidebar__link" href="#">Accordion</a>
+              <a class="sidebar__link" href="modal.html">Modal</a>
+              <a class="sidebar__link" href="tooltip.html">Tooltip</a>
+              <a class="sidebar__link" href="calendar.html">Calendar</a>
+              <a class="sidebar__link" href="accordion.html">Accordion</a>
             </div>
           </div>
           <div class="description">
             <div class="description__visual">
-              <h3 class="description__label">Label</h3>
-              <div class="description__main"></div>
+              <h3 class="description__label">Avatar</h3>
+              <div class="description__main">
+                <div class="avatar">
+                  <img
+                    class="avatar__img"
+                    src="../../assets/images/photo_2022-02-15_19-18-57.jpg"
+                    alt="employee avatar"
+                  />
+                </div>
+              </div>
               <div class="description__tabs tabs">
                 <div class="tabs__scroller">
                   <label class="tabs__state">
@@ -116,7 +130,34 @@
                 </div>
               </div>
             </div>
-            <div class="description__code"></div>
+            <div class="description__code">
+              <div class="description__html">
+                <pre
+                  class="description__avatar-code"
+                ><code> &lt;div class="avatar"&gt;
+                  &lt;img
+                    class="avatar__img"
+                    src="../../assets/images/photo_2022-02-15_19-18-57.jpg"
+                    alt="employee avatar"
+                  /&gt;
+                  &lt/div&gt;</code></pre>
+              </div>
+              <div class="description__css">
+                <pre>
+.avatar {
+                  width: 102px;
+                  height: 102px;
+                  overflow: hidden;
+                }
+                .avatar__img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 50%;
+                }
+                </pre>
+              </div>
+            </div>
           </div>
         </div>
       </main>

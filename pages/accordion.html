@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../components/page/page.css" />
+    <link rel="stylesheet" href="../components/header/header.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="../components/container/container.css" />
+    <link rel="stylesheet" href="../components/description/description.css" />
+    <link rel="stylesheet" href="../components/sidebar/sidebar.css" />
+    <link rel="stylesheet" href="../components/logo/logo.css" />
+    <link rel="stylesheet" href="../components/navigation/navigation.css" />
+    <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css" />
+    <link rel="stylesheet" href="../components/tabs/tabs.css" />
+    <link rel="stylesheet" href="../03-lection1/02-accordion/accordion.css" />
+    <title>Accordion</title>
+  </head>
+  <body class="page_inner">
+    <div class="inner page page_inner">
+      <header class="header header_inner">
+        <div class="container">
+          <div class="header__main">
+            <div class="logo">
+              <a class="logo__link" href="../index.html">
+                <div class="logo__logo logo__square"></div>
+                <div class="logo__logo logo__sphere"></div>
+                <div class="logo__logo logo__triangle"></div>
+              </a>
+            </div>
+            <div class="navigation">
+              <div class="navigation__inner">
+                <a href="" class="navigation__link navigation__link_active"
+                  >Components</a
+                >
+                <a href="" class="navigation__link">About</a>
+                <a href="" class="navigation__link">Contact</a>
+              </div>
+              <div class="toggler-theme">
+                <div class="toggler-theme__sun">
+                  <svg class="toggler-theme__icon">
+                    <!-- тут смогу добавить параметры размера на уровне toggler после merge компонента с этой веткой -->
+                    <use
+                      class="toggler-theme__icon"
+                      href="../assets/images/icons-sprite.svg#sun"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="toggler-theme__toggler">
+                  <label class="toggler">
+                    <input class="toggler__basic" type="checkbox" />
+                    <div class="toggler__state">
+                      <div class="toggler__control">
+                        <div class="toggler__inner-circle"></div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="toggler-theme__moon">
+                  <svg class="toggler-theme__icon">
+                    <use
+                      class="toggler-theme__icon"
+                      href="../assets/images/icons-sprite.svg#moon"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page__main inner__main">
+        <div class="container container_inner">
+          <div class="sidebar">
+            <div class="sidebar__group">
+              <h4 class="sidebar__group-label">Elements</h4>
+              <a class="sidebar__link" href="avatar.html">Avatar</a>
+              <a class="sidebar__link" href="histogram.html">Histogram</a>
+              <a class="sidebar__link" href="custom-form-elements.html"
+                >Custom form elements</a
+              >
+            </div>
+            <div class="sidebar__group">
+              <h4 class="sidebar__group-label">Containers</h4>
+              <a class="sidebar__link" href="modal.html">Modal</a>
+              <a class="sidebar__link" href="tooltip.html">Tooltip</a>
+              <a class="sidebar__link" href="calendar.html">Calendar</a>
+              <a class="sidebar__link sidebar_active" href="accordion.html"
+                >Accordion</a
+              >
+            </div>
+          </div>
+          <div class="description">
+            <div class="description__visual">
+              <h3 class="description__label">Accordion</h3>
+              <div class="description__main">
+                <div class="accordion">
+                  <details class="accordion__section">
+                    <summary class="accordion__summary">
+                      Accordion item 1
+                      <svg class="accordion__arrow">
+                        <use
+                          href="../../assets/images/icons-sprite.svg#arrow"
+                        ></use>
+                      </svg>
+                    </summary>
+                    <p class="accordion__summary-text">
+                      Het bakken van taarten en andere lekkernijen is altijd al
+                      mijn grote passie geweest. Als klein kind vond ik het al
+                      geweldig om mijn moeder in de keuken te helpen iets
+                      lekkers te bakken!
+                    </p>
+                  </details>
+                  <details class="accordion__section">
+                    <summary class="accordion__summary">
+                      Accordion item 2
+                      <svg class="accordion__arrow">
+                        <use
+                          href="../../assets/images/icons-sprite.svg#arrow"
+                        ></use>
+                      </svg>
+                    </summary>
+                    <p class="accordion__summary-text">
+                      Het bakken van taarten en andere lekkernijen is altijd al
+                      mijn grote passie geweest. Als klein kind vond ik het al
+                      geweldig om mijn moeder in de keuken te helpen iets
+                      lekkers te bakken!
+                    </p>
+                  </details>
+                  <details class="accordion__section">
+                    <summary class="accordion__summary">
+                      Accordion item 3
+                      <svg class="accordion__arrow">
+                        <use
+                          href="../../assets/images/icons-sprite.svg#arrow"
+                        ></use>
+                      </svg>
+                    </summary>
+                    <p class="accordion__summary-text">
+                      Het bakken van taarten en andere lekkernijen is altijd al
+                      mijn grote passie geweest. Als klein kind vond ik het al
+                      geweldig om mijn moeder in de keuken te helpen iets
+                      lekkers te bakken!
+                    </p>
+                  </details>
+                </div>
+              </div>
+            </div>
+            <div class="description__tabs tabs">
+              <div class="tabs__scroller">
+                <label class="tabs__state">
+                  <input
+                    name="tabs"
+                    class="tabs__control"
+                    type="radio"
+                    id="#all-tab"
+                    checked
+                  />
+                  <div class="tabs__label tabs__label_active">HTML</div>
+                  <div
+                    class="tabs__scroller-control tabs__scroller-control_active"
+                  ></div>
+                </label>
+                <label class="tabs__state">
+                  <input
+                    name="tabs"
+                    class="tabs__control"
+                    type="radio"
+                    id="#complex-tab"
+                  />
+                  <div class="tabs__label">CSS</div>
+                  <div class="tabs__scroller-control"></div>
+                </label>
+              </div>
+            </div>
+            <div class="description__code">
+              <div class="description__html">
+                <pre><code>&lt;div class="accordion"&gt;
+                  &lt;details class="accordion__section"&gt;
+                  &lt;summary class="accordion__summary"&gt;
+                      Accordion item 1
+                      &lt;svg class="accordion__arrow"&gt;
+                      &lt;use
+                          href="../../assets/images/icons-sprite.svg#arrow"
+                          &gt;&lt;/use&gt;
+                          &lt;/svg&gt;
+                          &lt;/summary&gt;
+                          &lt;p class="accordion__summary-text"&gt;
+                      Het bakken van taarten en andere lekkernijen is altijd al
+                      mijn grote passie geweest. Als klein kind vond ik het al
+                      geweldig om mijn moeder in de keuken te helpen iets
+                      lekkers te bakken!
+                      &lt;/p&gt;
+                      &lt;/details&gt;
+                      &lt;details class="accordion__section"&gt;
+                      &lt;summary class="accordion__summary"&gt;
+                      Accordion item 2
+                      &lt;svg class="accordion__arrow"&gt;
+                      &lt;use
+                          href="../../assets/images/icons-sprite.svg#arrow"
+                          &gt;&lt;/use&gt;
+                          &lt;/svg&gt;
+                          &lt;/summary&gt;
+                          &lt;p class="accordion__summary-text"&gt;
+                      Het bakken van taarten en andere lekkernijen is altijd al
+                      mijn grote passie geweest. Als klein kind vond ik het al
+                      geweldig om mijn moeder in de keuken te helpen iets
+                      lekkers te bakken!
+                      &lt;/p&gt;
+                      &lt;/details&gt;
+                      &lt;details class="accordion__section"&gt;
+                      &lt;summary class="accordion__summary"&gt;
+                      Accordion item 3
+                      &lt;svg class="accordion__arrow"&gt;
+                      &lt;use
+                          href="../../assets/images/icons-sprite.svg#arrow"
+                          &gt;&lt;/use&gt;
+                          &lt;/svg&gt;
+                          &lt;/summary&gt;
+                          &lt;p class="accordion__summary-text"&gt;
+                      Het bakken van taarten en andere lekkernijen is altijd al
+                      mijn grote passie geweest. Als klein kind vond ik het al
+                      geweldig om mijn moeder in de keuken te helpen iets
+                      lekkers te bakken!
+                      &lt;/p&gt;
+                      &lt;/details&gt;
+                      &lt;/div&gt;</code></pre>
+              </div>
+              <div class="description__css">
+                <pre>
+                  .accordion {
+                    width: 100%;
+                  }
+                  .accordion__section {
+                    margin-bottom: 8px;
+                    padding: 24px 32px;
+                    background-color: var(--white);
+                    border: 1px solid var(--grey-3);
+                    color: var(--black);
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    cursor: pointer;
+                    position: relative;
+                  }
+                  
+                  .accordion__summary,
+                  .accordion__summary-text {
+                    font-family: inter;
+                  }
+                  
+                  .accordion__summary-text {
+                    color: var(--grey-4);
+                    margin: 0;
+                    padding: 24px 0 24px 0;
+                  }
+                  .accordion__summary::-webkit-details-marker {
+                    display: none;
+                  }
+                  .accordion__section:last-child {
+                    margin: 0;
+                  }
+                  
+                  .accordion__section[open] {
+                    padding: 24px 32px 8px 32px;
+                  }
+                  
+                  .accordion__arrow {
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    right: 32px;
+                    top: 24px;
+                  }
+                  .accordion__section[open] .accordion__arrow {
+                    transform: rotate(180deg);
+                  }
+                  </pre
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer footer_inner">
+        <h5 class="footer__title footer_inner">reusable component library</h5>
+      </footer>
+    </div>
+  </body>
+</html>
