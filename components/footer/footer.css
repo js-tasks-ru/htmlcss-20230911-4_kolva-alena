@@ -6,7 +6,8 @@
 
 .footer {
   padding: 71px 0 136px 0;
-  background: #fff;
+  background: var(--main-bg);
+  color: var(--text-primary);
   font-family: Inter;
   text-align: center;
   display: flex;
@@ -35,8 +36,8 @@
 }
 
 .footer_inner {
-  color: var(--grey-3);
-  background-color: var(--grey-1);
+  color: var(--text-secondary);
+  background-color: var(--grey-bg);
   font-family: Inter;
   font-size: 12px;
   font-style: normal;

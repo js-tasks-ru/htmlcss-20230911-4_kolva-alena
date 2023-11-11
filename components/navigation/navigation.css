@@ -20,8 +20,8 @@
   transition: color 300ms;
 }
 .navigation__link_active {
-  color: var(--black);
+  color: var(--text-primary);
 }
 .navigation__link:hover {
-  color: var(--black);
+  color: var(--text-primary);
 }

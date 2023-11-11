@@ -1,12 +1,13 @@
 .card {
   padding: 32px 25px;
   border-radius: 12px;
-  background-color: var(--white);
+  background-color: var(--main-bg);
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   overflow: scroll;
   cursor: pointer;
+  color: var(--text-secondary);
 }
 .card__main {
   display: flex;
@@ -39,7 +40,7 @@
   gap: 6px;
 }
 .card__title {
-  color: var(--Black, #212429);
+  color: var(--text-primary);
   text-align: center;
   font-family: Roboto;
   font-size: 21px;

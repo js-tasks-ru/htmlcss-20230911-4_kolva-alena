@@ -1,22 +1,22 @@
 .header {
   padding-top: 24px;
-  background: #fff;
+  background: var(--main-bg);
 }
 .header__title {
   margin: 0;
-  color: var(--Black, #212429);
+  color: var(--text-primary);
   font-size: 50px;
   font-style: normal;
   font-weight: 500;
   line-height: 64px;
 }
 .header_inner {
-  background-color: var(--gey-1);
+  background-color: var(----grey-bg);
 }
 
 @media (max-width: 480px) {
   .header__title {
-    color: var(--Gray-4, #495057);
+    color: var(--input-text-color);
     /* h3 */
     font-family: Inter;
     font-size: 28px;

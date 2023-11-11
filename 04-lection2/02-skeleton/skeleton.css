@@ -1,6 +1,6 @@
 .skeleton {
   padding: 24px 24px 32px 24px;
-  background-color: var(--white);
+  background-color: var(--main-bg);
   border: 1px solid var(--Gray-3, #acb5bd);
   border-radius: 12px;
   display: flex;
