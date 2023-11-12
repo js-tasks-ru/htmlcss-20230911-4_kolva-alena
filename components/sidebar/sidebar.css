@@ -33,3 +33,9 @@
 .sidebar_active:hover {
   color: red;
 }
+
+@media (max-width: 720px) {
+  .sidebar {
+    display: none;
+  }
+}

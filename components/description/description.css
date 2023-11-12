@@ -4,6 +4,8 @@
   padding: 32px 48px 64px 48px;
   background-color: var(--white);
   flex-grow: 1;
+  width: 100%;
+  height: 100%;
 }
 .description__visual {
   display: flex;
@@ -27,7 +29,6 @@
 }
 .description__code {
   border-top: 1px solid var(--grey-2);
-  max-height: 300px;
   overflow: scroll;
   padding-top: 50px;
 }
