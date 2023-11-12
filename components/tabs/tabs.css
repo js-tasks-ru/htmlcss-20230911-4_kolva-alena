@@ -45,3 +45,8 @@
   opacity: 1;
   transform: scale(1);
 }
+@media (max-width: 720px) {
+  .tabs__scroller {
+    gap: 10px;
+  }
+}
