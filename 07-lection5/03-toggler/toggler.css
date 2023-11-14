@@ -73,11 +73,13 @@
   background-color: var(--grey-3);
 }
 
-.toggler-theme {
+.toggler__theme {
   align-items: center;
   cursor: pointer;
+  display: flex;
+  gap: 5px;
 }
-.toggler-theme__icon {
+.toggler__theme-icon {
   width: 24px;
   height: 24px;
 }
