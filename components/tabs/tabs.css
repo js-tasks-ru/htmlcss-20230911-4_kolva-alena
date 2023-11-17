@@ -47,3 +47,8 @@
   opacity: 1;
   transform: scale(1);
 }
+@media (max-width: 480px) {
+  .tabs__scroller {
+    overflow-x: auto;
+  }
+}
