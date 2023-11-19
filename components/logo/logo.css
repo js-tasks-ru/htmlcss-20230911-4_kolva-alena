@@ -22,3 +22,8 @@
   border-left: 15px solid var(--text-primary);
   border-bottom: 15px solid var(--text-primary);
 }
+.logo__link {
+  display: inline-flex;
+  gap: 8px;
+  position: relative;
+}

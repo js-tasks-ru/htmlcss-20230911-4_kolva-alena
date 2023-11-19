@@ -14,6 +14,7 @@
 @import '../../05-lection3/01-tooltip/tooltip.css';
 @import '../../04-lection2/01-histogram/histogram.css';
 @import '../../05-lection3/03-calendar/calendar.css';
+@import '../../09-lection7/01-burger-menu/burger-menu.css';
 
 :root {
   --white: #ffffff;

@@ -9,3 +9,9 @@
 .page_inner {
   background-color: var(--main-bg);
 }
+@media (max-width: 1150px) {
+  .page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

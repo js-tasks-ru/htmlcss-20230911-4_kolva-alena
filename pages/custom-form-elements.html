@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../components/page/page.css" />
+    <link rel="stylesheet" href="../components/header/header.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="../components/container/container.css" />
+    <link rel="stylesheet" href="../components/description/description.css" />
+    <link rel="stylesheet" href="../components/sidebar/sidebar.css" />
+    <link rel="stylesheet" href="../components/logo/logo.css" />
+    <link rel="stylesheet" href="../components/navigation/navigation.css" />
+    <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css" />
+    <link rel="stylesheet" href="../components/tabs/tabs.css" />
+    <link rel="stylesheet" href="../07-lection5/01-checkbox/checkbox.css" />
+    <link rel="stylesheet" href="../07-lection5/02-radio/radio.css" />
+    <script
+      defer
+      src="../10-lection8/01-theme-changer/theme-changer.js"
+    ></script>
+    <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <title>Custom form elements</title>
+  </head>
+  <body class="page_inner">
+    <div class="page page_inner">
+      <header class="header header_inner">
+        <div class="container">
+          <div class="header__main">
+            <div class="logo">
+              <a class="logo__link" href="../index.html">
+                <div class="logo__logo logo__square"></div>
+                <div class="logo__logo logo__sphere"></div>
+                <div class="logo__logo logo__triangle"></div>
+              </a>
+            </div>
+            <div class="navigation">
+              <div class="navigation__inner">
+                <a href="" class="navigation__link navigation__link_active"
+                  >Components</a
+                >
+                <a href="" class="navigation__link">About</a>
+                <a href="" class="navigation__link">Contact</a>
+              </div>
+              <div class="toggler__theme">
+                <div class="toggler__theme-sun">
+                  <svg class="toggler__theme-icon">
+                    <use
+                      class="toggler__theme-icon"
+                      href="../assets/images/icons-sprite.svg#sun"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="toggler__theme-toggler">
+                  <label class="toggler">
+                    <input
+                      class="toggler__basic"
+                      type="checkbox"
+                      id="theme-changer"
+                    />
+                    <div class="toggler__state">
+                      <div class="toggler__control">
+                        <div class="toggler__inner-circle"></div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="toggler__theme-moon">
+                  <svg class="toggler__theme-icon">
+                    <use
+                      class="toggler__theme-icon"
+                      href="../assets/images/icons-sprite.svg#moon"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div id="burger-menu-open" class="header__burger-logo">
+              <div class="header__burger-element"></div>
+              <div class="header__burger-element"></div>
+              <div class="header__burger-element"></div>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+              <div class="burger-menu__header">
+                <div class="burger-menu__close" id="burger-menu-close">
+                  <svg class="burger-menu__cross-sign">
+                    <use
+                      href="../../assets/images/icons-sprite.svg#cross-sign"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="burger-menu__mode">
+                <p class="burger-menu__title-mode">Dark mode</p>
+                <div class="toggler"></div>
+              </div>
+              <div class="burger-menu__category">
+                <p class="burger-menu__title-block">Elements</p>
+                <a href="" class="burger-menu__title">Avatar</a>
+                <a href="" class="burger-menu__title">Custom form elements</a>
+                <a href="" class="burger-menu__title">Button</a>
+              </div>
+              <div class="burger-menu__category">
+                <p class="burger-menu__title-block">Containers</p>
+                <a href="" class="burger-menu__title burger-menu__titile_active"
+                  >Histogram</a
+                >
+                <a href="" class="burger-menu__title">Calendar</a>
+                <a href="" class="burger-menu__title">Modal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page__main inner__main">
+        <div class="container container_inner">
+          <div class="sidebar">
+            <div class="sidebar__group">
+              <h4 class="sidebar__group-label">Elements</h4>
+              <a class="sidebar__link" href="avatar.html">Avatar</a>
+              <a class="sidebar__link" href="histogram.html">Histogram</a>
+              <a
+                class="sidebar__link sidebar_active"
+                href="custom-form-elements.html"
+                >Custom form elements</a
+              >
+            </div>
+            <div class="sidebar__group">
+              <h4 class="sidebar__group-label">Containers</h4>
+              <a class="sidebar__link" href="modal.html">Modal</a>
+              <a class="sidebar__link" href="tooltip.html">Tooltip</a>
+              <a class="sidebar__link" href="calendar.html">Calendar</a>
+              <a class="sidebar__link" href="accordion.html">Accordion</a>
+            </div>
+          </div>
+          <div class="description">
+            <div class="description__visual">
+              <h3 class="description__label">Custom form elements</h3>
+              <div class="description__main">
+                <div class="description__inner">
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__basic"
+                      type="checkbox"
+                      name="checkbox"
+                      id="checkbox-default"
+                    />
+
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          class="checkbox__icon-icon"
+                          width="15"
+                          height="13"
+                          viewBox="0 0 15 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.5 7.5L5 11L13 2"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="checkbox__title">Default</div>
+                    </div>
+                  </label>
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__basic"
+                      type="checkbox"
+                      name="checkbox"
+                      id="checkbox-default"
+                      checked
+                    />
+
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          width="15"
+                          height="13"
+                          viewBox="0 0 15 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.5 7.5L5 11L13 2"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="checkbox__title">Checked</div>
+                    </div>
+                  </label>
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__basic"
+                      type="checkbox"
+                      name="checkbox"
+                      id="checkbox-default"
+                      disabled
+                    />
+
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg
+                          class="checkbox__icon"
+                          width="15"
+                          height="13"
+                          viewBox="0 0 15 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.5 7.5L5 11L13 2"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="checkbox__title">Disabled</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="description__inner">
+                  <label class="radiobutton">
+                    <input
+                      class="radiobutton__basic"
+                      type="radio"
+                      name="list"
+                      checked
+                    />
+                    <div class="radiobutton__state">
+                      <div class="radiobutton__control">
+                        <div class="radiobutton__inner-circle"></div>
+                      </div>
+                      <div class="radiobutton__title">Selected</div>
+                    </div>
+                  </label>
+                  <label class="radiobutton">
+                    <input
+                      class="radiobutton__basic"
+                      type="radio"
+                      name="list"
+                    />
+                    <div class="radiobutton__state">
+                      <div class="radiobutton__control">
+                        <div class="radiobutton__inner-circle"></div>
+                      </div>
+                      <div class="radiobutton__title">Default</div>
+                    </div>
+                  </label>
+                  <label class="radiobutton">
+                    <input
+                      class="radiobutton__basic"
+                      type="radiobutton"
+                      name="list"
+                      disabled
+                    />
+
+                    <div class="radiobutton__state">
+                      <div class="radiobutton__control">
+                        <div class="radiobutton__inner-circle"></div>
+                      </div>
+                      <div class="radiobutton__title">Disabled</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <nav class="tabs">
+                <div class="tabs__scroller">
+                  <label class="tabs__state">
+                    <input
+                      name="tabs"
+                      class="tabs__control"
+                      type="radio"
+                      id="#all-tab"
+                      checked
+                    />
+                    <div class="tabs__label tabs__label_active">HTML</div>
+                    <div
+                      class="tabs__scroller-control tabs__scroller-control_active"
+                    ></div>
+                  </label>
+                  <label class="tabs__state">
+                    <input
+                      name="tabs"
+                      class="tabs__control"
+                      type="radio"
+                      id="#complex-tab"
+                    />
+                    <div class="tabs__label">CSS</div>
+                    <div class="tabs__scroller-control"></div>
+                  </label>
+                </div>
+              </nav>
+            </div>
+            <div class="description__code">
+              <div class="description__html">
+                <pre><code>
+      &lt;label class="checkbox"&gt;
+                  &lt;input
+                    class="checkbox__basic"
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-default"
+                  /&gt;
+
+                  &lt;div class="checkbox__state"&gt;
+                    &lt;div class="checkbox__control"&gt;
+                      &lt;svg
+                        width="15"
+                        height="13"
+                        viewBox="0 0 15 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      &gt;
+                        &lt;path
+                          d="M1.5 7.5L5 11L13 2"
+                          stroke="white"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class="checkbox__title"&gt;Default&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/label&gt;
+                &lt;label class="radiobutton"&gt;
+                  &lt;input
+                    class="radiobutton__basic"
+                    type="radio"
+                    name="list"
+                  /&gt;
+                  &lt;div class="radiobutton__state"&gt;
+                    &lt;div class="radiobutton__control"&gt;
+                      &lt;div class="radiobutton__inner-circle"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="radiobutton__title"&gt;Default&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/label&gt;
+              </code></pre>
+              </div>
+              <div class="description_css">
+                .checkbox { position: relative; display: inline-flex; }
+                .checkbox__basic { position: absolute; opacity: 0; left: -100vw;
+                } .checkbox__state { display: flex; gap: 12px; align-items:
+                center; } .checkbox__control { width: 28px; height: 28px;
+                background-color: (var(--white)); border: 1px solid
+                var(--grey-3); border-radius: 4px; display: flex;
+                justify-content: center; align-items: center; box-shadow: 0;
+                transition: 0.5s; } .checkbox__title { color: var(--Gray-4,
+                #495057); font-family: Inter; font-size: 16px; font-style:
+                normal; font-weight: 400; line-height: 24px; /* 150% */ }
+                .checkbox__basic:checked ~ .checkbox__state .checkbox__control {
+                background-color: var(--blue); border-color: var(--blue);
+                box-shadow: 0 1px 20px 2px var(--grey-3); }
+                .checkbox__basic:focus ~ .checkbox__state .checkbox__title {
+                text-decoration: underline; } .checkbox__basic:disabled ~
+                .checkbox__state .checkbox__control { background-color:
+                var(--grey-2); border-color: var(--grey-2); pointer-events:
+                none; } .checkbox__basic:disabled ~ .checkbox__state
+                .checkbox__title { color: var(--grey-2); }
+                .checkbox__basic:disabled ~ .checkbox__state .checkbox__icon {
+                visibility: hidden; }
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer footer_inner">
+        <h5 class="footer__title footer_inner">reusable component library</h5>
+      </footer>
+    </div>
+  </body>
+</html>

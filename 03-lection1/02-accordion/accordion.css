@@ -1,4 +1,7 @@
 /* Стилизация аккордеона */
+.accordion {
+  width: 100%;
+}
 .accordion__section {
   margin-bottom: 8px;
   padding: 24px 32px;

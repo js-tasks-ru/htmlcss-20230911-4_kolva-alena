@@ -3,24 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../components/page/page.css" />
     <link rel="stylesheet" href="../components/header/header.css" />
     <link rel="stylesheet" href="../components/footer/footer.css" />
     <link rel="stylesheet" href="../components/container/container.css" />
     <link rel="stylesheet" href="../components/description/description.css" />
     <link rel="stylesheet" href="../components/sidebar/sidebar.css" />
+    <link rel="stylesheet" href="../components/logo/logo.css" />
+    <link rel="stylesheet" href="../components/navigation/navigation.css" />
+    <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css" />
+    <link rel="stylesheet" href="../components/tabs/tabs.css" />
     <title>Inner Page</title>
   </head>
   <body>
     <div class="inner page page_inner">
       <header class="header header_inner">
-        <div class="container"></div>
+        <div class="container">
+          <div class="header__main">
+            <div class="logo">
+              <div class="logo__logo logo__square"></div>
+              <div class="logo__logo logo__sphere"></div>
+              <div class="logo__logo logo__triangle"></div>
+            </div>
+            <div class="navigation">
+              <div class="navigation__inner">
+                <a href="" class="navigation__link navigation__link_active"
+                  >Components</a
+                >
+                <a href="" class="navigation__link">About</a>
+                <a href="" class="navigation__link">Contact</a>
+              </div>
+              <div class="toggler-theme">
+                <div class="toggler-theme__sun">
+                  <svg class="toggler-theme__icon">
+                    <!-- тут смогу добавить параметры размера на уровне toggler после merge компонента с этой веткой -->
+                    <use
+                      class="toggler-theme__icon"
+                      href="../assets/images/icons-sprite.svg#sun"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="toggler-theme__toggler">
+                  <label class="toggler">
+                    <input class="toggler__basic" type="checkbox" />
+                    <div class="toggler__state">
+                      <div class="toggler__control">
+                        <div class="toggler__inner-circle"></div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="toggler-theme__moon">
+                  <svg class="toggler-theme__icon">
+                    <use
+                      class="toggler-theme__icon"
+                      href="../assets/images/icons-sprite.svg#moon"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
       <main class="page__main inner__main">
-        <div class="container">
-          <div class="sidebar"></div>
-          <div class="description"></div>
+        <div class="container container_inner">
+          <div class="sidebar">
+            <div class="sidebar__group">
+              <h4 class="sidebar__group-label">Elements</h4>
+              <a class="sidebar__link" href="#">Avatar</a>
+              <a class="sidebar__link" href="#">Histogram</a>
+              <a class="sidebar__link" href="#">Custom form elements</a>
+            </div>
+            <div class="sidebar__group">
+              <h4 class="sidebar__group-label">Containers</h4>
+              <a class="sidebar__link" href="#">Modal</a>
+              <a class="sidebar__link" href="#">Tooltip</a>
+              <a class="sidebar__link" href="#">Calendar</a>
+              <a class="sidebar__link" href="#">Accordion</a>
+            </div>
+          </div>
+          <div class="description">
+            <div class="description__visual">
+              <h3 class="description__label">Label</h3>
+              <div class="description__main"></div>
+              <div class="description__tabs tabs">
+                <div class="tabs__scroller">
+                  <label class="tabs__state">
+                    <input
+                      name="tabs"
+                      class="tabs__control"
+                      type="radio"
+                      id="#all-tab"
+                      checked
+                    />
+                    <div class="tabs__label tabs__label_active">HTML</div>
+                    <div
+                      class="tabs__scroller-control tabs__scroller-control_active"
+                    ></div>
+                  </label>
+                  <label class="tabs__state">
+                    <input
+                      name="tabs"
+                      class="tabs__control"
+                      type="radio"
+                      id="#complex-tab"
+                    />
+                    <div class="tabs__label">CSS</div>
+                    <div class="tabs__scroller-control"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="description__code"></div>
+          </div>
         </div>
       </main>
       <footer class="footer footer_inner">

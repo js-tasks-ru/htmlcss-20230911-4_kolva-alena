@@ -82,4 +82,5 @@
 .toggler__theme-icon {
   width: 24px;
   height: 24px;
+  color: var(--text-primary);
 }

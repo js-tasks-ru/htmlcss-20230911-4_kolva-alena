@@ -6,6 +6,9 @@
 }
 .tooltip__trigger {
   cursor: pointer;
+  color: var(--text-primary);
+  width: 24px;
+  height: 24px;
 }
 
 .tooltip__bubble {

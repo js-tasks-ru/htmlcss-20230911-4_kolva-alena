@@ -23,8 +23,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0;
+  transition: 0.5s;
 }
-
 .checkbox__title {
   color: var(--Gray-4, #495057);
   font-family: Inter;
@@ -36,6 +37,7 @@
 .checkbox__basic:checked ~ .checkbox__state .checkbox__control {
   background-color: var(--blue);
   border-color: var(--blue);
+  box-shadow: 0 1px 20px 2px var(--grey-3);
 }
 
 .checkbox__basic:focus ~ .checkbox__state .checkbox__title {
@@ -54,4 +56,13 @@
 
 .checkbox__basic:disabled ~ .checkbox__state .checkbox__icon {
   visibility: hidden;
+}
+html[data-theme-dark] .checkbox__icon-icon {
+  display: none;
+}
+html[data-theme-dark]
+  .checkbox__basic:checked
+  ~ .checkbox__state
+  .checkbox__icon-icon {
+  display: block;
 }
