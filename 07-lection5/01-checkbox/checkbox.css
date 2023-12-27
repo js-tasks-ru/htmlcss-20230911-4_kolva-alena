@@ -58,11 +58,11 @@
   visibility: hidden;
 }
 html[data-theme-dark] .checkbox__icon-icon {
-  display: none;
+  display: var(--checkbox-icon);
 }
 html[data-theme-dark]
   .checkbox__basic:checked
   ~ .checkbox__state
   .checkbox__icon-icon {
-  display: block;
+  display: var(--checkbox-icon-checked);
 }
