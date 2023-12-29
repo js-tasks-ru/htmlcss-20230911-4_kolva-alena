@@ -68,6 +68,4 @@ html[data-theme-dark] {
   --text-primary: var(--white);
   --active-text-color: var(--grey-2);
   --input-text-color: var(--font-color);
-  --checkbox-icon: none;
-  --checkbox-icon-checked: block;
 }

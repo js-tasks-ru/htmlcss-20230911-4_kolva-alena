@@ -57,12 +57,12 @@
 .checkbox__basic:disabled ~ .checkbox__state .checkbox__icon {
   visibility: hidden;
 }
-html[data-theme-dark] .checkbox__icon-icon {
-  display: var(--checkbox-icon);
+.checkbox__icon-icon {
+  display: none;
 }
-html[data-theme-dark]
-  .checkbox__basic:checked
+.checkbox__basic:checked
   ~ .checkbox__state
+  .checkbox__control
   .checkbox__icon-icon {
-  display: var(--checkbox-icon-checked);
+  display: block;
 }
