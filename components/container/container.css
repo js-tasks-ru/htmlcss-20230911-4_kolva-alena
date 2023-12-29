@@ -2,10 +2,16 @@
   display: flex;
   max-width: 1110px;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 @media (max-width: 480px) {
   .container {
     padding: 0 16px 0 16px;
   }
+}
+.container_inner {
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
 }

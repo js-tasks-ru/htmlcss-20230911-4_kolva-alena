@@ -7,6 +7,15 @@
 @import '../../components/container/container.css';
 @import '../../components/card/card.css';
 @import '../../components/preview/preview.css';
+@import '../../components/logo/logo.css';
+@import '../../components/navigation/navigation.css';
+@import '../../components/toggler/toggler-theme.css';
+@import '../../components/tabs/tabs.css';
+@import '../../05-lection3/01-tooltip/tooltip.css';
+@import '../../04-lection2/01-histogram/histogram.css';
+@import '../../05-lection3/03-calendar/calendar.css';
+@import '../../09-lection7/01-burger-menu/burger-menu.css';
+
 :root {
   --white: #ffffff;
   --black: #212429;
@@ -26,6 +35,18 @@
 
   --primary: var(--blue);
   --secondary: var(--purple);
+
+  --text-primary: var(--black);
+  --text-secondary: var(--grey-3);
+  --active-text-color: var(--text-primary);
+  --main-bg: var(--light-bg);
+  --grey-bg: var(--grey-1);
+  --white-bg: var(--white);
+  --light-bg: var(--white);
+  --dark-bg: var(--black);
+  --card-bg: var(--white);
+  --font-color: var(--text-primary);
+  --input-text-color: var(--grey-4);
 }
 
 body {
@@ -35,4 +56,16 @@ html,
 body {
   min-height: 100%;
   height: 100%;
+}
+html[data-theme-dark] {
+  --main-bg: var(--black);
+  --font-color: #ffffff75;
+  --dark-bg: var(--grey-1);
+  --white-bg: var(--black);
+  --light-bg: var(--grey-4);
+  --grey-bg: var(--grey-4);
+  --card-bg: var(--black);
+  --text-primary: var(--white);
+  --active-text-color: var(--grey-2);
+  --input-text-color: var(--font-color);
 }

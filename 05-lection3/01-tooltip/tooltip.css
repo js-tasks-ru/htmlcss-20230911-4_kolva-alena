@@ -1,9 +1,14 @@
 .tooltip {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .tooltip__trigger {
   cursor: pointer;
+  color: var(--text-primary);
+  width: 24px;
+  height: 24px;
 }
 
 .tooltip__bubble {
@@ -12,7 +17,7 @@
   border-radius: 10px;
   color: var(--Gray-2, #dde2e5);
   box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
-  background-color: var(--black);
+  background-color: var(--dark-bg);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -28,11 +33,18 @@
   content: '';
   border: 10px solid transparent;
   position: absolute;
-  border-top: 6px solid var(--black);
+  border-top: 6px solid var(--dark-bg);
   top: 100%;
   transform: translateX(-50%);
   left: 50%;
 }
 .tooltip__trigger:hover ~ .tooltip__bubble {
   display: block;
+}
+.tooltip_card .tooltip__bubble {
+  display: block;
+  background-color: var(--blue);
+}
+.tooltip_card .tooltip__bubble::before {
+  border-top-color: var(--blue);
 }

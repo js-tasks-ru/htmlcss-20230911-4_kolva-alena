@@ -13,6 +13,7 @@
   font-weight: 500;
   line-height: normal;
   position: relative;
+  transition: background-color 0.5s;
 }
 
 .button:disabled {
@@ -37,11 +38,14 @@
 }
 
 .button_alternate {
-  color: var(--grey-4, #495057);
-  background-color: var(--white);
+  color: var(--input-text-color);
+  background-color: var(--main-bg);
   border: 1px solid var(--grey-3);
 }
 
 .button_alternate:hover:not(:disabled) {
-  border: 1px solid var(--grey-4);
+  border: 1px solid var(--input-text-color);
+}
+.button_modal {
+  margin-top: 19px;
 }

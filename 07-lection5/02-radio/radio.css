@@ -17,7 +17,7 @@
 .radiobutton__control {
   width: 28px;
   height: 28px;
-  background-color: var(--white);
+  background-color: var(--main-bg);
   border: 1px solid var(--grey-2);
   border-radius: 28px;
   display: flex;
@@ -34,7 +34,7 @@
   line-height: 24px; /* 150% */
 }
 .radiobutton__basic:checked ~ .radiobutton__state .radiobutton__control {
-  background-color: var(--white);
+  background-color: var(--main-bg);
   border-color: var(--blue);
   border: 2px solid var(--blue);
   width: 27px;

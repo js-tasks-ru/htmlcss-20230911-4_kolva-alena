@@ -1,11 +1,12 @@
 .preview {
-  background: var(--grey-1);
+  background: var(--grey-bg);
   padding: 67px 0 92px;
 }
 .preview__inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+
   gap: 30px;
-  flex-wrap: wrap;
 }
 
 @media (max-width: 480px) {

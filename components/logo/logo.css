@@ -1,0 +1,29 @@
+.logo {
+  display: inline-flex;
+  gap: 8px;
+  position: relative;
+}
+.logo__logo {
+  width: 30px;
+  height: 30px;
+}
+
+.logo__square {
+  background-color: var(--text-primary);
+}
+.logo__sphere {
+  border-radius: 50%;
+  background-color: var(--text-primary);
+}
+.logo__triangle::before {
+  content: '';
+  border: 15px solid transparent;
+  position: absolute;
+  border-left: 15px solid var(--text-primary);
+  border-bottom: 15px solid var(--text-primary);
+}
+.logo__link {
+  display: inline-flex;
+  gap: 8px;
+  position: relative;
+}
